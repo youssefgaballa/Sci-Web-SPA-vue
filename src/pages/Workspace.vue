@@ -1,9 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <Navbar />
-  <p>Sci-Web-App</p>
-  <RouterView />
+  <div>Workspace</div>
 </template>
 
 <style scoped></style>
