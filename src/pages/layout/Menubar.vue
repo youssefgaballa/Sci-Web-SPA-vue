@@ -8,23 +8,23 @@ import { ref } from 'vue'
 
 interface MenuItem {
   label: string
-  icon?: any
   route: string
 }
+const MenuItemMap = new Map<string, any>([
+  ['Home', MaterialSymbolsLightHome],
+  ['Workspace', FluentMdl2PenWorkspace],
+])
 
 const items = ref<MenuItem[]>([
   {
     label: 'Home',
-    icon: MaterialSymbolsLightHome,
     route: '/',
   },
   {
     label: 'Workspace',
-    icon: FluentMdl2PenWorkspace,
     route: '/workspace',
   },
 ])
-const isLogin = ref<string>('menubar-item-login')
 </script>
 
 <template>
@@ -34,7 +34,7 @@ const isLogin = ref<string>('menubar-item-login')
     </template>
     <template #item="{ item, props }">
       <RouterLink :to="item.route" class="menubar-item">
-        <component v-if="item.icon" :is="item.icon" />
+        <component v-if="item.icon" :is="MenuItemMap.get(item.label as string)" />
         <span>{{ item.label }}</span>
       </RouterLink>
     </template>
