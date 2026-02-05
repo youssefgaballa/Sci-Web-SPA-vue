@@ -3,7 +3,6 @@ import SciWebIcon from '@/common/icons/SciWebIcon.vue'
 import MaterialSymbolsLightHome from '@/common/icons/MaterialSymbolsLightHome.vue'
 import FluentMdl2PenWorkspace from '@/common/icons/FluentMdl2PenWorkspace.vue'
 import Menubar from 'primevue/menubar'
-// import { type MenuItem } from 'primevue/menuitem'
 import { ref } from 'vue'
 
 interface MenuItem {
@@ -12,7 +11,7 @@ interface MenuItem {
 }
 const MenuItemMap = new Map<string, any>([
   ['Home', MaterialSymbolsLightHome],
-  ['Workspace', FluentMdl2PenWorkspace],
+  ['Create', FluentMdl2PenWorkspace],
 ])
 
 const items = ref<MenuItem[]>([
@@ -21,8 +20,8 @@ const items = ref<MenuItem[]>([
     route: '/',
   },
   {
-    label: 'Workspace',
-    route: '/workspace',
+    label: 'Create',
+    route: '/create',
   },
 ])
 </script>
@@ -34,7 +33,7 @@ const items = ref<MenuItem[]>([
     </template>
     <template #item="{ item, props }">
       <RouterLink :to="item.route" class="menubar-item">
-        <component v-if="item.icon" :is="MenuItemMap.get(item.label as string)" />
+        <component :is="MenuItemMap.get(item.label as string)" />
         <span>{{ item.label }}</span>
       </RouterLink>
     </template>
@@ -68,7 +67,7 @@ const items = ref<MenuItem[]>([
   color: inherit;
 }
 .menubar-item-end:hover {
-  background-color: oklch(96.8% 0.007 247.896);
-  border-radius: 0.25rem;
+  background-color: #f1f5f9;
+  border-radius: 4px;
 }
 </style>

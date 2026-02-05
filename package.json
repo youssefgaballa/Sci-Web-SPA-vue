@@ -14,11 +14,15 @@
   },
   "dependencies": {
     "@primeuix/themes": "^2.0.3",
+    "@tiptap/pm": "^3.18.0",
+    "@tiptap/starter-kit": "^3.18.0",
+    "@tiptap/vue-3": "^3.18.0",
     "primevue": "^4.5.4",
     "vue": "^3.5.26",
     "vue-router": "^5.0.1"
   },
   "devDependencies": {
+    "@iconify/vue": "^5.0.0",
     "@tsconfig/node24": "^24.0.4",
     "@types/node": "^24.10.9",
     "@vitejs/plugin-vue": "^6.0.3",

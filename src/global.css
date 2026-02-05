@@ -2,3 +2,11 @@ body {
   margin: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
+
+.tiptap {
+  border: 1px solid #000000;
+
+}
+.tiptap:first-child {
+  margin-top: 0;
+}

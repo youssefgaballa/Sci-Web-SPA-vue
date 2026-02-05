@@ -1,10 +1,18 @@
 <script setup lang="ts">
-import Menubar from './pages/layout/Menubar.vue'
+import MenuBar from './pages/layout/MenuBar.vue'
+import SideBar from './pages/layout/SideBar.vue'
+import { RouterView } from 'vue-router'
 </script>
 <template>
-  <Menubar />
-  <p>Sci-Web-App</p>
-  <RouterView />
+  <MenuBar />
+  <div class="app-container">
+    <SideBar />
+    <RouterView />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.app-container {
+  display: flex;
+}
+</style>
