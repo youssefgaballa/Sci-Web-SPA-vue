@@ -1,29 +1,23 @@
 <script setup lang="ts">
-import SciWebIcon from '@/common/icons/SciWebIcon.vue'
-import MaterialSymbolsLightHome from '@/common/icons/MaterialSymbolsLightHome.vue'
-import FluentMdl2PenWorkspace from '@/common/icons/FluentMdl2PenWorkspace.vue'
-import Menubar from 'primevue/menubar'
-import { ref } from 'vue'
+import SciWebIcon from '@/common/icons/SciWebIcon.vue';
+import MaterialSymbolsLightHome from '@/common/icons/MaterialSymbolsLightHome.vue';
+import FluentMdl2PenWorkspace from '@/common/icons/FluentMdl2PenWorkspace.vue';
+import Menubar from 'primevue/menubar';
+import { ref } from 'vue';
 
 interface MenuItem {
-  label: string
-  route: string
+  label: string;
+  route: string;
 }
 const MenuItemMap = new Map<string, any>([
   ['Home', MaterialSymbolsLightHome],
   ['Create', FluentMdl2PenWorkspace],
-])
+]);
 
 const items = ref<MenuItem[]>([
-  {
-    label: 'Home',
-    route: '/',
-  },
-  {
-    label: 'Create',
-    route: '/create',
-  },
-])
+  { label: 'Home', route: '/' },
+  { label: 'Create', route: '/create' },
+]);
 </script>
 
 <template>

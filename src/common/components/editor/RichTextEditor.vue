@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import StarterKit from '@tiptap/starter-kit'
-import { useEditor, EditorContent } from '@tiptap/vue-3'
-import EditorToolbar from './EditorToolbar.vue'
+import StarterKit from '@tiptap/starter-kit';
+import { useEditor, EditorContent } from '@tiptap/vue-3';
+import EditorToolbar from './EditorToolbar.vue';
 
-const editor = useEditor({
-  content: '<p></p>',
-  extensions: [StarterKit],
-})
+const editor = useEditor({ content: '<p></p>', extensions: [StarterKit] });
 </script>
 
 <template>

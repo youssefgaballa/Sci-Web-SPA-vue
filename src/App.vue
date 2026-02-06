@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import MenuBar from './pages/layout/MenuBar.vue'
-import SideBar from './pages/layout/SideBar.vue'
-import { RouterView } from 'vue-router'
+import MenuBar from './pages/layout/Menubar.vue';
+import SideBar from './pages/layout/SideBar.vue';
+import { RouterView } from 'vue-router';
 </script>
 <template>
   <MenuBar />

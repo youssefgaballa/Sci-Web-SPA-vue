@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import RichTextEditor from '@/common/components/editor/RichTextEditor.vue'
+import RichTextEditor from '@/common/components/editor/RichTextEditor.vue';
 </script>
 
 <template>
