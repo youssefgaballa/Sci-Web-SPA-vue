@@ -11,11 +11,7 @@ app.use(router);
 app.use(PrimeVue, {
   theme: {
     preset: Material,
-    options: {
-      prefix: 'p',
-      darkModeSelector: '.p-dark',
-      cssLayer: false,
-    },
+    options: { prefix: 'p', darkModeSelector: '.p-dark', cssLayer: false },
   },
 });
 app.mount('#app');

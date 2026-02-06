@@ -3,11 +3,11 @@ import RichTextEditor from '@/common/components/editor/RichTextEditor.vue';
 </script>
 
 <template>
-  <form class="create-page-form">
-    <div class="edit-content-container">
-      <RichTextEditor />
-    </div>
-  </form>
+  <!-- <form class="create-page-form" @submit.prevent> -->
+  <div class="edit-content-container">
+    <RichTextEditor />
+  </div>
+  <!-- </form> -->
 </template>
 
 <style scoped>

@@ -5,8 +5,12 @@ body {
 
 .tiptap {
   border: 1px solid #000000;
-
+  min-height: 300px;
 }
 .tiptap:first-child {
   margin-top: 0;
+}
+.tiptap p {
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
 }
